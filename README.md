@@ -4,7 +4,7 @@
 - Use the trained classifier to predict image content of top-K predictions
 - Develope a Command Line Application to allows users to set hyperparameters for learning rate, number of hidden units, training epochs, GPU/CPU
 
-![alt text](https://github.com/ania4data/Developing_AI_application_for_classification/assets/image_08004.jpg)
+![alt text](https://github.com/ania4data/Developing_AI_application_for_classification/tree/master/assets/image_08004.jpg)
 
 
 # Dependecies and packages:
