@@ -1,0 +1,40 @@
+
+sample predict results:
+
+python predict_submission.py "./flowers/test/102/image_08004.jpg" "./result_prj2/checkpoint_alexnet_3_node1024.pth" --topk 5
+category_names :   cat_to_name.json
+topk   :           5
+checkpoint_dir :   ./result_prj2/checkpoint_alexnet_3_node1024.pth
+image_dir :        ./flowers/test/102/image_08004.jpg
+device :           cpu
+
+===============
+checkpoint:
+alexnet
+Sequential(
+  (fc1): Linear(in_features=9216, out_features=1024, bias=True)
+  (relu1): ReLU()
+  (fc2): Linear(in_features=1024, out_features=102, bias=True)
+  (output): LogSoftmax()
+)
+
+cpu
+
+====== Real flower =====
+
+Flower actual name: ?
+Flower actual class: ?
+
+====== Most likely flower =====
+
+Flower name: blackberry lily
+Flower class: 102
+Flower probability: 0.98738194
+======    Top 5   ======
+
+List of flower prediction: name: ['blackberry lily', 'tiger lily', 'canna lily', 'wallflower', 'foxglove']
+List of flower prediction: class: ['102', '6', '90', '46', '94']
+List of flower prediction: probability: [0.98738194, 0.012117726, 0.00039976274, 4.4490364e-05, 2.9115952e-05]
+
+===== time =====
+4.535215377807617  sec

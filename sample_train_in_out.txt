@@ -1,0 +1,38 @@
+
+sample train results:
+
+train_submission.py "flowers" --gpu --hidden_units 1024 --epochs 3 --learning_rate 0.001
+
+Data directory :   flowers
+saving directory : ./result_prj2
+architecture :     alexnet
+category_names :   cat_to_name.json
+learning rate :    0.001
+hidden units :     1024
+epochs :           3
+device :           cuda
+Sequential(
+  (fc1): Linear(in_features=9216, out_features=1024, bias=True)
+  (relu1): ReLU()
+  (fc2): Linear(in_features=1024, out_features=102, bias=True)
+  (output): LogSoftmax()
+)
+epoch 1 / 3, accuracy_run_train: 0.000000, loss_run_train: 0.073084, eval_accuracy: 6.845966, eval_loss: 0.185743
+epoch 1 / 3, accuracy_run_train: 26.835938, loss_run_train: 0.061840, eval_accuracy: 59.290954, eval_loss: 0.024793
+epoch 1 / 3, accuracy_run_train: 54.140625, loss_run_train: 0.027417, eval_accuracy: 71.026895, eval_loss: 0.016401
+epoch 2 / 3, accuracy_run_train: 65.625000, loss_run_train: 0.018306, eval_accuracy: 75.183374, eval_loss: 0.014339
+epoch 2 / 3, accuracy_run_train: 67.382812, loss_run_train: 0.017941, eval_accuracy: 79.951100, eval_loss: 0.011319
+epoch 2 / 3, accuracy_run_train: 71.367188, loss_run_train: 0.016360, eval_accuracy: 84.107579, eval_loss: 0.009921
+epoch 3 / 3, accuracy_run_train: 78.125000, loss_run_train: 0.012800, eval_accuracy: 82.518337, eval_loss: 0.010259
+epoch 3 / 3, accuracy_run_train: 75.429688, loss_run_train: 0.013756, eval_accuracy: 83.618582, eval_loss: 0.009310
+epoch 3 / 3, accuracy_run_train: 74.609375, loss_run_train: 0.014434, eval_accuracy: 82.518337, eval_loss: 0.010332
+test_loss: 0.010535 , test_accuracy : 80.952381
+____________
+____________
+1024
+____________
+alexnet
+____________
+NLLLoss()
+____________
+9216
